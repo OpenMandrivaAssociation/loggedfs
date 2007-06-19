@@ -1,6 +1,6 @@
 %define name	loggedfs
 %define version	0.4
-%define release	%mkrel 1
+%define release	%mkrel 2
 
 Name:		%name
 Version:	%version
@@ -35,6 +35,7 @@ rest of the job.
 
 %files
 %defattr(-,root,root)
+%doc LICENSE
 %{_sysconfdir}/loggedfs.xml
 %{_bindir}/loggedfs
 %{_mandir}/man1/loggedfs.1.bz2
