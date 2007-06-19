@@ -12,7 +12,7 @@ URL:		http://loggedfs.sourceforge.net/
 BuildRoot:	%{_tmppath}/%{name}-root
 Group:		File tools
 Summary:	LoggedFS is a fuse-based filesystem which can log every operations that happens in it
-BuildRequires:	fuse-devel, pcre-devel, rlog-devel, libxml-devel
+BuildRequires:	fuse-devel, pcre-devel, rlog-devel, libxml2-devel
 Requires:	fuse
 %description
 LoggedFS is a fuse-based filesystem which can log every operations that happens in it
