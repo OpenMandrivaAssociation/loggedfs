@@ -38,4 +38,4 @@ rest of the job.
 %doc LICENSE
 %{_sysconfdir}/loggedfs.xml
 %{_bindir}/loggedfs
-%{_mandir}/man1/loggedfs.1.bz2
+%{_mandir}/man1/loggedfs.*
