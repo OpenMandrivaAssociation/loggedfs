@@ -15,7 +15,8 @@ Summary:	LoggedFS is a fuse-based filesystem which can log every operations that
 BuildRequires:	fuse-devel, pcre-devel, rlog-devel, libxml2-devel
 Requires:	fuse
 %description
-LoggedFS is a fuse-based filesystem which can log every operations that happens in it
+LoggedFS is a fuse-based filesystem which can log every operations that happens
+in it.
 
 How it works: Fuse does almost everything. LoggedFS only sends a message
 to syslog when called by fuse and then let the real filesystem do the
