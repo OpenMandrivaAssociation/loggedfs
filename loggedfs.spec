@@ -1,12 +1,12 @@
 %define name	loggedfs
-%define version	0.4
-%define release	%mkrel 5
+%define version	0.5
+%define release	%mkrel 1
 
 Name:		%name
 Version:	%version
 Release:	%release
 License:	GPL
-Source:		%{name}-%{version}.tar.bz2
+Source:		http://downloads.sourceforge.net/loggedfs/loggedfs-%{version}.tar.bz2
 Patch0:		%{name}_makefile.patch
 URL:		http://loggedfs.sourceforge.net/
 BuildRoot:	%{_tmppath}/%{name}-root
@@ -23,7 +23,7 @@ to syslog when called by fuse and then let the real filesystem do the
 rest of the job.
 
 %prep
-%setup -q
+%setup -q -c
 %patch0 -p1
 
 %build
