@@ -1,0 +1,27 @@
+--- t/Makefile	2007-01-20 18:00:20.000000000 +0100
++++ t2/Makefile	2008-10-13 20:02:27.000000000 +0200
+@@ -3,6 +3,10 @@
+ LDFLAGS=-Wall -ansi -lpcre -lfuse -lrlog `xml2-config --libs`
+ srcdir=src
+ builddir=build
++prefix=/usr
++bindir=$(prefix)/bin
++mandir=$(prefix)/share/man
++sysconfdir=/etc
+ 
+ all: $(builddir) loggedfs
+ 
+@@ -24,10 +28,9 @@
+ 	rm -rf $(builddir)/
+ 	
+ install:
+-	gzip loggedfs.1
+-	cp loggedfs.1.gz /usr/share/man/man1/
+-	cp loggedfs /usr/bin/
+-	cp loggedfs.xml /etc/
++	cp loggedfs.1.gz $(mandir)/man1/
++	cp loggedfs $(bindir)/
++	cp loggedfs.xml $(sysconfdir)/
+ 
+ 
+ mrproper: clean
