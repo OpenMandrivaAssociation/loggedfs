@@ -8,7 +8,7 @@ Release:	%release
 License:	GPL
 Source:		http://downloads.sourceforge.net/loggedfs/loggedfs-%{version}.tar.bz2
 Patch0:		%{name}_makefile.patch
-URL:		http://loggedfs.sourceforge.net/
+URL:		https://loggedfs.sourceforge.net/
 BuildRoot:	%{_tmppath}/%{name}-root
 Group:		File tools
 Summary:	Fuse-based filesystem which can log every operations that happens in it
